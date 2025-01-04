@@ -18,9 +18,7 @@ The code requires the following Python libraries:
 - `scipy`
 
 You can install these dependencies using pip:
-
-bash
-pip install numpy matplotlib scipy
+- `pip install numpy matplotlib scipy`
 
 # Usage
 1. **Define the System**: 
@@ -44,3 +42,14 @@ pip install numpy matplotlib scipy
      - `fpu_quadratic_velocity_non_zero.png`
      - `fpu_cubic_velocity_0.png`
      - `fpu_cubic_velocity_non_zero.png`
+
+# Code Structure 
+- **`fpu_system` Function**:
+  Defines the equations of motion for the FPU system. It calculates accelerations based on the current displacements, velocities, and the nonlinearity parameters (`alpha` and `beta`).
+
+- **Simulations**:
+  Each simulation involves defining initial conditions and solving the system using `solve_ivp`. Results are plotted and saved for each scenario.
+
+- **Visualization**:
+  Displacement of each particle in the lattice is plotted as a function of time.
+
