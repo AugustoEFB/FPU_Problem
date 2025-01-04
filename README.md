@@ -19,8 +19,9 @@ The code requires the following Python libraries:
 
 You can install these dependencies using pip:
 
-```bash
+bash
 pip install numpy matplotlib scipy
+
 # Usage
 1. **Define the System**: 
    - Number of points in the lattice (`n`)
